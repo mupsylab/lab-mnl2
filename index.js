@@ -1,5 +1,4 @@
-// ?boundary=false&type=pn&size=100&numSet=[5,7,10,13,15,19,25,30,35,40,43,45,50,55,61,65,70,75,80,83,85,88,90,95,97]&feedback=true&repection=3
-// ?boundary=true&type=pn&size=10&numSet=[5,7]&feedback=false&repection=3&length=100
+// ?boundary=false&size=1&numSet=[5,7]&feedback=true&repection=3&length=10
 
 // 初始化检测
 let c = Object.keys((function() {
@@ -46,19 +45,19 @@ sti.push(
     ))
 );
 
-// timeline.push({
-//     // 进入全屏
-//     type: 'fullscreen',
-//     fullscreen_mode: true,
-//     message: "<p style='font: bold 42px 微软雅黑; color: #B22222'>\
-//                    欢迎参与我们的实验</p>\
-//                    <p style='font: 30px 微软雅黑; color: black'><br/>\
-//                    <单击下方 我同意 进入实验程序><br/><b>实验过程中请勿退出全屏</b>\
-//                    <br/><br/></p>\
-//                    <p style='font: 24px 华文中宋; color: grey'>\
-//                    Mupsy在线实验室<br/>2021年</p>",
-//     button_label: "我同意",
-// }, info_get(subjectID));
+timeline.push({
+    // 进入全屏
+    type: 'fullscreen',
+    fullscreen_mode: true,
+    message: "<p style='font: bold 42px 微软雅黑; color: #B22222'>\
+                   欢迎参与我们的实验</p>\
+                   <p style='font: 30px 微软雅黑; color: black'><br/>\
+                   <单击下方 我同意 进入实验程序><br/><b>实验过程中请勿退出全屏</b>\
+                   <br/><br/></p>\
+                   <p style='font: 24px 华文中宋; color: grey'>\
+                   Mupsy在线实验室<br/>2021年</p>",
+    button_label: "我同意",
+}, info_get(subjectID));
 
 timeline.push({
     type: "preload",
